@@ -19,6 +19,11 @@ body{
 #describe{
   width: 80%;
 }
+#hbo{
+  width: 5%;
+  height: 5%;
+  padding-left: 0.2%;
+}
 #snButton{
   position: relative;
   width: 100%;
