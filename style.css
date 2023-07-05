@@ -105,6 +105,11 @@ p.snTag{
   width: 80%;
   height: auto;
 }
+#characterButton{
+  font-size: 60%;
+  border-bottom-style: solid;
+  border-bottom-color: maroon;
+}
 #commentSection{
   position: relative;
   width: 80%;

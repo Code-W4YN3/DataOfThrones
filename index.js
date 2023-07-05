@@ -8,6 +8,7 @@ function displayCharacters(){
   .then(data => data.forEach(character => {
     const list =document.getElementById('castList') 
     let listItem = document.createElement('button') 
+    listItem.id = "characterButton"
     listItem.innerText = `${character.fullName}`
     list.appendChild(listItem)
     let picture = document.getElementById('charImage')
