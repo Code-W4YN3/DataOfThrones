@@ -110,10 +110,11 @@ p.snTag{
   width: 80%;
   left: 10%;
 }
-.comment{
+#comment{
   position: relative;
   left: 5%;
   width: 70%;
+  font-size: 130%;
 }
 #postComment{
   position: relative;
@@ -162,4 +163,8 @@ p.snTag{
 #charData b{
   color: black;
   background-color: rgb(38, 38, 65) ;
+}
+#postComment{
+  background-color: maroon;
+  font-size: 130%;
 }
