@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', ()=>{
   displayCharacters()
+  addComment()
 })
+const User = prompt("Enter username", " ")
 
 function displayCharacters(){
   fetch('https://thronesapi.com/api/v2/Characters')
@@ -25,5 +27,30 @@ function displayCharacters(){
       `
     })
   }))
+}
+
+function addComment(){
+  let form = document.getElementById('addCom')
+  form.addEventListener('submit', function(){
+    event.preventDefault()
+    console.log('submitted')
+    let comPar= document.createElement('p')
+      comPar.className="userCom"
+    let comBox = document.createElement('div')
+      comBox.className="userComBox"
+    let comment = document.getElementById('comment').value 
+    
+    comBox.innerHTML =`
+      ${User}: ${comment} <br>
+    `
+    document.getElementById('comments').appendChild(comBox)
+    })
+  }
+
+
+function addLikes(){
+  document.getElementById('like').addEventListener('click', ()=>{
+    likes = likes++
+})
 }
 
