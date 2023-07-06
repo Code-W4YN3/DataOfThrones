@@ -27,6 +27,7 @@
   margin-top: 0%;
   font-size: 120%;
   margin-bottom: 2%;
+  width: 60%;
 }
 
 #logo{
@@ -146,6 +147,12 @@ p.snTag{
   width: 80%;
   height: auto;
 }
+#castInfo p{
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background-color: rgb(38, 38, 65);
+  color: black;
+}
 #characterButton{
   font-size: 60%;
   border-bottom-style: solid;
@@ -205,6 +212,7 @@ p.snTag{
   background-color: black;
   border-bottom-style: dashed;
   border-bottom-color: maroon;
+  margin-bottom: 1%;
 }
 #castList{
   background-color: rgb(38, 38, 65);

@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 const User = prompt("Enter username", " ")
 
 function displayWelcome(){
+  if(User != null){
   document.getElementById('welcome').innerText= `Welcome, @${User}`
+  }
 }
 
 function displayCharacters(){
