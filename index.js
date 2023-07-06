@@ -1,8 +1,13 @@
 document.addEventListener('DOMContentLoaded', ()=>{
   displayCharacters()
+  displayWelcome()
   addComment()
 })
 const User = prompt("Enter username", " ")
+
+function displayWelcome(){
+  document.getElementById('welcome').innerText= `Welcome, @${User}`
+}
 
 function displayCharacters(){
   fetch('https://thronesapi.com/api/v2/Characters')
@@ -39,11 +44,11 @@ function addComment(){
     let comBox = document.createElement('div')
       comBox.className="userComBox"
     let comment = document.getElementById('comment').value 
-    
     comBox.innerHTML =`
-      ${User}: ${comment} <br>
+      @<b>${User}</b>: ${comment} <br>
     `
     document.getElementById('comments').appendChild(comBox)
+    document.getElementById('comment').innerText = null
     })
   }
 
