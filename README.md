@@ -15,7 +15,7 @@ This is a Game Of Thrones data webpage that allows users to read info on the sho
 ### View live site
 Click the link provided below to access the site in your browser
 
-
+https://wayne-otido.github.io/DataOfThrones/
 
 ### Using the website
 Users are able to:
