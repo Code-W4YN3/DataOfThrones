@@ -3,8 +3,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
   displayWelcome()
   addComment()
 })
+// Prompts user for a username
 const User = prompt("Enter username", " ")
 
+// Displays welcome messaage under header
 function displayWelcome(){
   if(User != null){
   document.getElementById('welcome').innerText= `Welcome, @${User}`
@@ -15,6 +17,8 @@ function displayCharacters(){
   fetch('https://thronesapi.com/api/v2/Characters')
   .then(res => res.json())
   .then(data => data.forEach(character => {
+
+    // Creates buttons for each character
     const list =document.getElementById('castList') 
     let listItem = document.createElement('button') 
     listItem.id = "characterButton"
@@ -22,6 +26,8 @@ function displayCharacters(){
     list.appendChild(listItem)
     let picture = document.getElementById('charImage')
     let about = document.getElementById('charData')
+
+    // Renders character data upon character button click
     listItem.addEventListener('click', ()=>{
       picture.innerHTML= `
         <img id ="characterPicture" src="${character.imageUrl}">
@@ -38,6 +44,8 @@ function displayCharacters(){
 
 function addComment(){
   let form = document.getElementById('addCom')
+
+  // Adds a comment after submission
   form.addEventListener('submit', function(){
     event.preventDefault()
     console.log('submitted')
@@ -49,15 +57,10 @@ function addComment(){
     comBox.innerHTML =`
       @<b>${User}</b>: ${comment} <br>
     `
+
+    // Adds the comment to the comment section
     document.getElementById('comments').appendChild(comBox)
-    document.getElementById('comment').innerText = null
     })
   }
 
-
-function addLikes(){
-  document.getElementById('like').addEventListener('click', ()=>{
-    likes = likes++
-})
-}
 
