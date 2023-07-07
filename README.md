@@ -5,7 +5,7 @@
 ## Description
 This is a Game Of Thrones data webpage that allows users to read info on the show, watch its trailer, view its character details and share their opinion in the comments. 
 
-
+![DataOfThrones](./media/DataOfThrones.png)
 
 # How to use
 ### Requirements
