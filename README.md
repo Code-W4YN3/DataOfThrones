@@ -26,6 +26,26 @@ Users are able to:
   * Click on a character to view their data
   * Post a comment/review in the comment form
 
+## Run Locally
+### Setup/Installation Requirements
+To run this app locally, you need a PC with:
+* Access to the internet
+
+### Installation Process
+  1. Clone this repository using
+
+    ```bash
+      git clone git@github.com:wayne-otido/DataOfThrones.git
+    ```
+  2. Open the index.html file in your preferred browser.
+    ```bash
+      open index.html
+    ```
+
+# Technologies used
+  * HTML
+  * CSS
+  * JS
 
 
 
